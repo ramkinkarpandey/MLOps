@@ -1,0 +1,34 @@
+#
+# FIXME::REQUIRED: set an MLflow experiment name to track pipeline executions and artifacts. On Databricks, an
+#                  experiment name must be a valid path in the workspace.
+#
+experiment:
+  name: ""
+#
+# FIXME::OPTIONAL: Set the registry server URI, useful if you have a registry server different
+#                  from the tracking server. First create a Databricks Profile, see
+#                  https://github.com/databricks/databricks-cli#installation
+# model_registry:
+#   uri: "databricks://DATABRICKS_PROFILE_NAME"
+
+# FIXME::REQUIRED: Specify the training and evaluation data location. This is usually a DBFS
+# location ("dbfs:/...") or a SQL table ("SCHEMA.TABLE").
+INGEST_DATA_LOCATION: ""
+#
+# FIXME::OPTIONAL: Specify the format of the training and evaluation dataset. Natively supported
+#                  formats are: parquet, spark_sql, delta.
+# INGEST_DATA_FORMAT: parquet
+#
+# FIXME::OPTIONAL: Specify the scoring data location.
+# INGEST_SCORING_DATA_LOCATION: ""
+#
+# FIXME::OPTIONAL: Specify the format of the scoring dataset. Natively supported formats are:
+#                  parquet, spark_sql, delta.
+# INGEST_SCORING_DATA_FORMAT: parquet
+#
+# FIXME::OPTIONAL: Specify the output location of the batch scoring predict step.
+# SCORED_OUTPUT_DATA_LOCATION: ""
+#
+# FIXME::OPTIONAL: Specify the format of the scored dataset. Natively supported formats are:
+#                  parquet, delta, table.
+# SCORED_OUTPUT_DATA_FORMAT: parquet
